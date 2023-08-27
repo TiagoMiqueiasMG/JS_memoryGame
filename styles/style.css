@@ -5,11 +5,27 @@ body{
 }
 
 .card{
+    width: 150px;
+    height: 150px;
 
+}
+
+.card_back, .card_front{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
 }
 .card_front{
 
+    background-color: #081919;
+
 }
 .card_back{
-
+    color: #081919;
+    background-color: #7ECAF5;
+    font-size: 50px;
 }
