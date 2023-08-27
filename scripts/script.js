@@ -115,5 +115,7 @@ let techs =['bootstrap',
     }
 
     function flipCard(){
+        
+        this.classList.add("flip")
 
     }
