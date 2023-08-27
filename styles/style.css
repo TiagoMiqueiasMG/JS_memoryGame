@@ -7,7 +7,9 @@ body{
 .card{
     width: 150px;
     height: 150px;
-
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .card_back, .card_front{
@@ -18,11 +20,17 @@ body{
     align-items: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    backface-visibility: hidden;
 }
+
+.flip{
+    transform: rotateY(180deg);
+}
+
 .card_front{
-
+    transform: rotateY(180deg);
     background-color: #081919;
-
 }
 .card_back{
     color: #081919;
