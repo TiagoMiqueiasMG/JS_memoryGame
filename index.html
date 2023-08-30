@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=Righteous&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Jogo da Memória</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="gameBoard">
 
-    <div class="card">
-        <div id="fasdf" class="card_front"  data-icon="bootstrap">
-            <img class="icon" src="./src/img/bootstrap.png">
+      <!-- <div class="card">
+        <div id="fasdf" class="card_front" data-icon="bootstrap">
+          <img class="icon" src="./src/img/bootstrap.png" />
         </div>
 
-        <div class="card_back">
-            &lt/&gt
-        </div>
+        <div class="card_back">&lt/&gt</div>
+      </div> -->
+
     </div>
 
     <div id="gameOver">
@@ -29,10 +33,11 @@
         <button id="restart" onclick="restart()">
             Jogue novamente! 
         </button>
-
     </div>
 
+    <script src="./scripts/game.js"></script>
+    
     <script src="./scripts/script.js"></script>
     
-</body>
+  </body>
 </html>

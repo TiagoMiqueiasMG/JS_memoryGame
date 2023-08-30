@@ -8,6 +8,11 @@
 body{
     font-family: 'Handjet', cursive;
     font-family: 'Righteous', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FF856B;
 }
 
 .card{
@@ -51,10 +56,11 @@ body{
     background-color: rgba(0, 0, 0, 0.9);
     color: aliceblue;
     font-size: 50px;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    top: 0;
 }
 
 #restart{
@@ -65,4 +71,11 @@ body{
     border: none;
     margin-top: 10px;
 
+}
+
+#gameBoard{    
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 20px;    
 }
